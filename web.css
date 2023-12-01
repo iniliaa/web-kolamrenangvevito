@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+  
+  }
+  body {
+    background-color: bisque;
+  }
+  nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    width: 100%;
+    font-family: 'Volkhov';
+    align-items: center;
+    position: fixed;
+  }
+  nav ul {
+    display: flex;
+  
+    align-items: center;
+    list-style: none;
+  }
+  nav li{
+    position: relative;
+    padding: 10px;
+    font-weight: bolder;
+    margin-right: 20px;
+  }
+  
+  nav a{
+    color: #5e6282;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 13px 25px;
+    transition: all .42s;
+  }
+  nav ul li a::after{
+    content: '';
+  position: absolute;
+    width:0;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    transition: all .42s;
+    
+  }
+  
+  nav ul li a:hover::after{
+    width: 100%;
+    color: #d46951;
+    border-bottom: 2px solid black;
+  }
+  .logo img {
+    max-width: 100%;
+    width: 101px;
+    height: auto;
+  }
+  
+  
+  .btn-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-btn {
+    font-size: 17px;
+    color: #feffff;
+    font-weight: 500;
+    border: 2px solid #ffffff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: all 0.42s;
+  }
+  
+  .nav-btn:hover {
+    background-color: lightblue;
+    color: rgb(0, 0, 0);
+  }
+  
