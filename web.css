@@ -83,4 +83,101 @@
     background-color: lightblue;
     color: rgb(0, 0, 0);
   }
+  #menu-icon {
+    font-size: 35px;
+    color: #feffff;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+  }
   
+  section {
+    padding: 60px 12%;
+  }
+  
+  .background {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-image: url(img/kolam\ blur.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  
+  .home-text h4 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+  
+  .home-text h1 {
+    color: moccasin;
+    font-size: 56px;
+    font-family: "Volkhov";
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -0.04em;
+    margin-bottom: 18px;
+  }
+  
+  .home-text p {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .main-galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .hov-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.42s;
+  }
+  
+  .galery-text h5 {
+    font-size: 18px;
+    color: #5e6282;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+  }
+  
+  .box {
+    position: relative;
+  }
+  
+  .box .text-in {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    color: #ffffff;
+  }
+  
+  .hov-img {
+    overflow: hidden;
+  }
+  
+  .hov-img:hover img {
+    transform: scale(1.1);
+    filter: brightness(50%) hue-rotate(45deg);
+  }
+  
+  .test-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
